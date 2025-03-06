@@ -1,0 +1,128 @@
+:root {
+  /* Base font size */
+  --font-size-default: 18px;
+  
+  /* Colors */
+  --color-primary: #3498db;
+  --color-secondary: #2ecc71;
+  --color-text: #333333;
+  --color-background: #f9f9f9;
+  --color-card-bg: #ffffff;
+  
+  /* Spacing */
+  --gutter: 1rem;
+}
+
+html {
+  font-size: var(--font-size-default);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+}
+
+/* Page block */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--gutter);
+}
+
+.page__header {
+  text-align: center;
+  margin-bottom: calc(var(--gutter) * 2);
+  padding: var(--gutter);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.page__title {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.page__description {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.page__content {
+  padding: var(--gutter);
+}
+
+.page__footer {
+  margin-top: calc(var(--gutter) * 3);
+  padding: var(--gutter);
+  text-align: center;
+  font-size: 0.8rem;
+  border-top: 1px solid var(--color-primary);
+}
+
+/* Card block */
+.card {
+  background-color: var(--color-card-bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: calc(var(--gutter) * 2);
+}
+
+.card__top {
+  background-color: var(--color-primary);
+  padding: var(--gutter);
+  color: white;
+}
+
+.card__heading {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card__bottom {
+  padding: var(--gutter);
+}
+
+.card__text {
+  margin-bottom: var(--gutter);
+}
+
+.card__call-to-action {
+  display: inline-block;
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card__call-to-action:hover {
+  background-color: #27ae60;
+}
+
+/* Modifier example */
+.card--large {
+  max-width: 100%;
+}
+
+/* Media queries using EVO breakpoints */
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto calc(var(--gutter) * 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    max-width: 50%;
+  }
+}
