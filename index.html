@@ -9,6 +9,16 @@
 <body>
   <div class="page">
     <header class="page__header">
+      <nav class="nav">
+        <div class="nav__logo">EVO Test</div>
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
+          <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      
       <h1 class="page__title">Welcome to Test Claude Test</h1>
       <p class="page__description">A simple test page following the EVO theme code conventions</p>
     </header>
@@ -23,10 +33,106 @@
           <a href="#" class="card__call-to-action">Learn More</a>
         </div>
       </section>
+      
+      <!-- Features Section -->
+      <section id="features" class="section">
+        <h2 class="section__title">Key Features</h2>
+        <p class="section__description">Explore what makes the EVO theme special</p>
+        
+        <div class="features">
+          <div class="card card--small">
+            <div class="card__top">
+              <h3 class="card__heading">BEM Structure</h3>
+            </div>
+            <div class="card__bottom">
+              <p class="card__text">Uses Block Element Modifier methodology for clear, maintainable CSS.</p>
+              <ul class="list">
+                <li class="list__item">Clear naming conventions</li>
+                <li class="list__item">Modular components</li>
+                <li class="list__item">Easy to maintain</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card card--small">
+            <div class="card__top">
+              <h3 class="card__heading">Responsive Design</h3>
+            </div>
+            <div class="card__bottom">
+              <p class="card__text">Built with mobile-first approach and responsive breakpoints.</p>
+              <ul class="list">
+                <li class="list__item">Mobile-first approach</li>
+                <li class="list__item">Standard breakpoints</li>
+                <li class="list__item">Consistent spacing</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card card--small">
+            <div class="card__top">
+              <h3 class="card__heading">CSS Variables</h3>
+            </div>
+            <div class="card__bottom">
+              <p class="card__text">Uses CSS custom properties for easy theming and consistency.</p>
+              <ul class="list">
+                <li class="list__item">Centralized color management</li>
+                <li class="list__item">Consistent spacing units</li>
+                <li class="list__item">Easy theme customization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Form Section -->
+      <section id="contact" class="section">
+        <h2 class="section__title">Contact Us</h2>
+        <p class="section__description">Have questions? Reach out!</p>
+        
+        <div class="form-container">
+          <form class="form">
+            <div class="form__group">
+              <label for="name" class="form__label">Name</label>
+              <input type="text" id="name" class="form__input" placeholder="Your name">
+            </div>
+            
+            <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" id="email" class="form__input" placeholder="Your email">
+            </div>
+            
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea id="message" class="form__input form__input--textarea" placeholder="Your message"></textarea>
+            </div>
+            
+            <button type="submit" class="form__button">Send Message</button>
+          </form>
+        </div>
+      </section>
     </main>
     
     <footer class="page__footer">
-      <p>&copy; 2025 Test Project</p>
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3 class="footer__heading">EVO Theme</h3>
+          <p>A demo of the EVO theme code conventions</p>
+        </div>
+        
+        <div class="footer__section">
+          <h3 class="footer__heading">Links</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Home</a></li>
+            <li><a href="#features" class="footer__link">Features</a></li>
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>&copy; 2025 Test Project</p>
+      </div>
     </footer>
   </div>
 </body>
